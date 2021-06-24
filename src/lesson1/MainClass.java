@@ -102,6 +102,10 @@ public class MainClass {
             return true;
         }
     }
+    // Лучше если так: без if , через return
+    public static boolean checkSummr(long a, long b) {
+        return ( a+b>=10 ) && ( a+b<=20 );
+    }
 
     /*5. Написать метод, которому в качестве параметра передается целое число,
     метод должен напечатать в консоль, положительное ли число передали или отрицательное.
@@ -124,11 +128,17 @@ public class MainClass {
             return false;
         }
     }
+    // Лучше если так:
+    public static boolean checkNumbr(int n) {
+       return n < 0 ;
+    }
 
     /*7.Написать метод, которому в качестве параметра передается строка,
     обозначающая имя.Метод должен вывести в консоль сообщение «Привет, указанное_имя!».*/
     public static void hiYourself(String yourName) {
         System.out.println("Привет," + yourName + "!");
+        //Вариант с printf
+        System.out.printf("Привет, %s !\n", yourName );
     }
 
     /*8. *Написать метод, который определяет, является ли год високосным,
@@ -140,6 +150,14 @@ public class MainClass {
         if ((yer % 100 > 0) && (yer % 4 == 0)) {
             System.out.println("Это високосный год!");
         } else if (yer % 400 == 0) {
+            System.out.println("Это високосный год!");
+        } else {
+            System.out.println("Это НЕ високосный год!");
+        }
+    }
+    //Лучше так,более локанично
+    public static void nevisak(int yer) {
+        if (yer % 4 == 0 && yer % 100 !=0 || yer % 400 ==0) {
             System.out.println("Это високосный год!");
         } else {
             System.out.println("Это НЕ високосный год!");
