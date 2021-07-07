@@ -109,7 +109,23 @@ public class XOgame {
         return true;
     }
 
+    // Определяем кто победил ...
+    public static boolean checkWin(char hooWin) {
+        int win_i = 0;
+        int win_j = 0;
+        for (int i = 0; i < map.length; i++) {
+            for (int j = 0; j < map.length; j++) {
+                win_i += map[i][j];
+                win_j += map[j][i];
+                /*Проверяем на победу в колонках и рядах */
+                if (win_i == SIZE*hooWin || win_j == SIZE*hooWin) {
+                    return true;
+                }
+            }
+        }
 
+        return false;
+    }
 
 
 }
