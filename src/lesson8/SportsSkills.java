@@ -5,4 +5,5 @@ public interface SportsSkills {
     void  jump();
     void runDist(int maxInt);
     void maxHeight(int maxInt);
+
 }

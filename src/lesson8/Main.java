@@ -21,9 +21,9 @@ public class Main {
         };
 
         runJump(athletes);
-        System.out.printf("%5c %c %c\n", '*', '*', '*');
+        System.out.printf("%3c %c %c\n", '*', '*', '*');
         maxSkills(athletes, track1.length, wall1.height);
-        System.out.printf("%5c %c %c\n", '*', '*', '*');
+        System.out.printf("%3c %c %c\n", '*', '*', '*');
         theGreatRace(tracksWalls, athletes);
     }
 
