@@ -9,7 +9,5 @@ public class JoggingTrack extends Obstacles{
         this.length = length;
     }
 
-    public int getLength() {
-        return length;
-    }
+
 }

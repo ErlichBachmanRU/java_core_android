@@ -58,5 +58,11 @@ public class Cat implements SportsSkills{
 
     }
 
+    public int getMaxDist() {
+        return maxDist;
+    }
 
+    public int getMaxHeight() {
+        return maxHeight;
+    }
 }

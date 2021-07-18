@@ -13,7 +13,6 @@ public class Obstacles {
         return name;
     }
 
-    public String getType() {
-        return type;
-    }
+
+
 }

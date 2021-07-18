@@ -57,4 +57,15 @@ public class Robot implements SportsSkills{
         }
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public int getMaxDist() {
+        return maxDist;
+    }
+
+    public int getMaxHeight() {
+        return maxHeight;
+    }
 }

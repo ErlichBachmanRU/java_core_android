@@ -9,7 +9,5 @@ public class WallBarrier extends Obstacles {
         this.height = height;
     }
 
-    public int getHeight() {
-        return height;
-    }
+
 }
