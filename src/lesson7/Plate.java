@@ -17,8 +17,11 @@ public class Plate {
 
     @Override
     public String toString() {
-        return "Plate{" +
-                "food=" + food +
-                '}';
+        if(food <= 0) {
+            food = 0;
+            return "Тарелка пустая,мяса не осталось !";
+        } else {
+            return "В тарелке " + food + " кусочков мяса.";
+        }
     }
 }
